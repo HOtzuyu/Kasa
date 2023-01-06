@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    &__liens {
+        display: flex;
+        align-items: end;
+
+        &--url {
+            @include fonts(text-link);
+            text-decoration: none;
+            margin-left: 57px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
