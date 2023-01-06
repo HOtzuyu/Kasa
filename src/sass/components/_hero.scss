@@ -1,0 +1,15 @@
+.hero {
+    width: 100%;
+    height: 223px;
+    background-color: #FF6060;
+    background-image: url("../../assets/background-image_home.jpg");
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        @include fonts(principal-title);
+    }
+}
