@@ -31,6 +31,32 @@
   color: #FFFFFF;
 }
 
+.thumb {
+  width: 340px;
+  height: 340px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+}
+.thumb__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  border-radius: 10px;
+}
+.thumb__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  position: absolute;
+  align-self: flex-end;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -50,6 +76,18 @@
 }
 .header__liens--url:hover {
   text-decoration: underline;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 60px;
+  row-gap: 50px;
+  border-radius: 25px;
+  background: #F6F6F6;
+  padding: 56px 50px;
+  margin-top: 43px;
 }
 
 /*# sourceMappingURL=style.css.map */
