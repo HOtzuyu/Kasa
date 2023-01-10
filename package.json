@@ -18,9 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/sass/main.scss:./src/utils/css/style.css",
-    "predeploy" : "npm run build",
-"deploy" : "gh-pages -d build"
+    "sass": "sass --watch ./src/sass/main.scss:./src/utils/css/style.css"
   },
   "eslintConfig": {
     "extends": [
@@ -51,8 +49,5 @@
   "bugs": {
     "url": "https://github.com/HOtzuyu/Kasa/issues"
   },
-  "homepage": "http://HOtzuyu.github.io/Kasa",
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
+  "homepage": "https://github.com/HOtzuyu/Kasa#readme"
 }
