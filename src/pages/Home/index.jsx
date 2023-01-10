@@ -1,16 +1,20 @@
 import React from "react"
-import "../../utils/css/style.css"
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+
+import { getLogements } from "../../Data/logements.js"
 
 import Hero from "../../components/Hero"
 import Thumb from "../../components/Thumb"
 
-import { getLogements } from "../../Data/logements.js";
+import "../../utils/css/style.css"
+
+import Image from "../../assets/backgroundHome.jpg"
+
 
 function Home() {
     return (
         <div>
-            <Hero />
+            <Hero bgPhoto={ Image } titre={true} />
             <div className="gallery">
                 {getLogements().map((logement) => (
                 <Link to={`/logement/${logement.id}`} key={logement.id}>

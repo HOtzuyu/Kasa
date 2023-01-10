@@ -2,6 +2,9 @@
 * {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #root {
@@ -61,6 +64,136 @@
   margin-bottom: 20px;
 }
 
+.dropdown__section {
+  background-color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 5.61px 18.08px 7.39px 18.08px;
+  margin-top: 31px;
+}
+.dropdown__section--title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+.dropdown__section--text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FF6060;
+  padding: 27px 27px 19px 27px;
+  background-color: #F6F6F6;
+  border-radius: 0 0 5px 5px;
+}
+.dropdown__section--list {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FF6060;
+  padding: 27px 27px 19px 27px;
+  background-color: #F6F6F6;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+}
+.dropdown,
+.dropdown .reduit {
+  width: 582px;
+}
+
+.slider {
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slider__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.slider__navigation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24.92px 23.36px;
+}
+.slider__navigation--suivant, .slider__navigation--precedent {
+  height: 79.2px;
+}
+.slider__navigation--chiffre {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  align-self: flex-end;
+}
+
+.intro {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro__gauche--titre {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  color: #FF6060;
+}
+.intro__gauche--localisation {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FF6060;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+}
+.profil__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FF6060;
+  margin-right: 10px;
+}
+.profil__picture {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.note {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.tags {
+  display: flex;
+  margin-top: 20px;
+}
+.tags__tag {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  background: #FF6060;
+  border-radius: 10px;
+  padding: 3px 30px;
+  margin-right: 10px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -82,6 +215,23 @@
   text-decoration: underline;
 }
 
+.footer {
+  height: 209px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.footer__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -92,6 +242,48 @@
   background: #F6F6F6;
   padding: 56px 50px;
   margin-top: 43px;
+}
+
+.apropos__image {
+  border-radius: 25px;
+  filter: brightness(0.8);
+}
+
+.about {
+  width: 1023px;
+  margin: 31px auto;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.erreurPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 103px auto 159px auto;
+}
+.erreurPage__titre {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18rem;
+  color: #FF6060;
+}
+.erreurPage__texte {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  color: #FF6060;
+}
+.erreurPage__retour {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #FF6060;
+  margin-top: 182px;
 }
 
 /*# sourceMappingURL=style.css.map */

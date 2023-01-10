@@ -1,12 +1,16 @@
 import React from "react"
 import "../../utils/css/style.css"
-import Image from "../../assets/backgroundHome.jpg"
 
-function Hero() {
+function Hero( {
+    bgPhoto , titre
+}) {
     return(
         <div className="hero">
-            <img className="hero__image" src={ Image } alt="image du header" />
-            <h1 className="hero__title">Chez vous, partout et ailleurs</h1>
+            <img className="hero__image" src={ bgPhoto } alt="header" />
+            <h1 className="hero__title">{
+            titre ? ' Chez vous, partout et ailleurs' : null
+            }
+            </h1>
         </div>
     )
 }
