@@ -13,6 +13,12 @@
   margin-right: auto;
   padding-top: 50px;
 }
+@media screen and (max-width: 1240px) {
+  #root {
+    width: auto;
+    margin: 0;
+  }
+}
 
 .hero {
   width: 100%;
@@ -21,6 +27,16 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media screen and (max-width: 1240px) {
+  .hero {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero {
+    height: 111px;
+  }
 }
 .hero__image {
   width: 100%;
@@ -36,6 +52,14 @@
   color: #FFFFFF;
   position: absolute;
 }
+@media screen and (max-width: 375px) {
+  .hero__title {
+    font-size: 24px;
+    line-height: 24px;
+    width: 80%;
+    margin: auto 16px;
+  }
+}
 
 .thumb {
   width: 340px;
@@ -44,6 +68,12 @@
   cursor: pointer;
   display: flex;
   border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .thumb {
+    width: 335px;
+    height: 255px;
+  }
 }
 .thumb__image {
   height: 100%;
@@ -97,9 +127,13 @@
   border-radius: 0 0 5px 5px;
   list-style: none;
 }
-.dropdown,
-.dropdown .reduit {
+.dropdown.reduit {
   width: 582px;
+}
+@media screen and (max-width: 1240px) {
+  .dropdown.reduit {
+    width: 100%;
+  }
 }
 
 .slider {
@@ -110,6 +144,16 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media screen and (max-width: 1240px) {
+  .slider {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider {
+    height: 255px;
+  }
 }
 .slider__photo {
   width: 100%;
@@ -129,6 +173,12 @@
 .slider__navigation--suivant, .slider__navigation--precedent {
   height: 79.2px;
 }
+@media screen and (max-width: 375px) {
+  .slider__navigation--suivant, .slider__navigation--precedent {
+    height: 19.8px;
+    width: 11.67px;
+  }
+}
 .slider__navigation--chiffre {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -136,11 +186,26 @@
   color: #FFFFFF;
   align-self: flex-end;
 }
+@media screen and (max-width: 375px) {
+  .slider__navigation--chiffre {
+    display: none;
+  }
+}
 
 .intro {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1240px) {
+  .intro {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .intro {
+    flex-direction: column;
+  }
 }
 .intro__gauche--titre {
   font-family: "Montserrat", sans-serif;
@@ -148,11 +213,32 @@
   font-size: 2.25rem;
   color: #FF6060;
 }
+@media screen and (max-width: 375px) {
+  .intro__gauche--titre {
+    font-size: 18px;
+    line-height: 25.67px;
+  }
+}
 .intro__gauche--localisation {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   color: #FF6060;
+}
+@media screen and (max-width: 375px) {
+  .intro__gauche--localisation {
+    font-size: 14px;
+    line-height: 19.96px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .intro__droite {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .profil {
@@ -166,10 +252,22 @@
   color: #FF6060;
   margin-right: 10px;
 }
+@media screen and (max-width: 375px) {
+  .profil__name {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
+}
 .profil__picture {
   height: 64px;
   width: 64px;
   border-radius: 50%;
+}
+@media screen and (max-width: 375px) {
+  .profil__picture {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .note {
@@ -178,10 +276,26 @@
   justify-content: flex-end;
   margin-top: 24px;
 }
+@media screen and (max-width: 375px) {
+  .note {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .note img {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 .tags {
   display: flex;
   margin-top: 20px;
+}
+@media screen and (max-width: 375px) {
+  .tags {
+    margin-top: 10px;
+  }
 }
 .tags__tag {
   font-family: "Montserrat", sans-serif;
@@ -193,15 +307,48 @@
   padding: 3px 30px;
   margin-right: 10px;
 }
+@media screen and (max-width: 375px) {
+  .tags__tag {
+    font-size: 10px;
+    width: 80px;
+    height: 18px;
+    padding: 0;
+    text-align: center;
+  }
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 63px;
 }
+@media screen and (max-width: 1240px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    margin-bottom: 19.71px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header__logo {
+    width: 145px;
+  }
+  .header__logo--img {
+    width: 145px;
+    object-fit: cover;
+  }
+}
 .header__liens {
   display: flex;
   align-items: flex-end;
+}
+@media screen and (max-width: 375px) {
+  .header__liens {
+    align-items: center;
+  }
 }
 .header__liens--url {
   font-family: "Montserrat", sans-serif;
@@ -210,6 +357,12 @@
   color: #FF6060;
   text-decoration: none;
   margin-left: 57px;
+}
+@media screen and (max-width: 375px) {
+  .header__liens--url {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 }
 .header__liens--url:hover {
   text-decoration: underline;
@@ -224,12 +377,22 @@
   align-items: center;
   margin-top: 200px;
 }
+@media screen and (max-width: 375px) {
+  .footer {
+    margin-top: 100px;
+  }
+}
 .footer__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   color: #FFFFFF;
   margin-top: 32px;
+}
+@media screen and (max-width: 375px) {
+  .footer__text {
+    font-size: 12px;
+  }
 }
 
 .gallery {
@@ -243,6 +406,22 @@
   padding: 56px 50px;
   margin-top: 43px;
 }
+@media screen and (max-width: 1240px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .gallery {
+    margin-top: 22px;
+    padding: 0;
+    row-gap: 20px;
+  }
+}
 
 .apropos__image {
   border-radius: 25px;
@@ -253,10 +432,21 @@
   width: 1023px;
   margin: 31px auto;
 }
+@media screen and (max-width: 1240px) {
+  .about {
+    width: 90%;
+  }
+}
 
 .details {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1240px) {
+  .details {
+    padding: 0 20px;
+    display: block;
+  }
 }
 
 .erreurPage {
