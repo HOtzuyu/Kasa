@@ -1,11 +1,8 @@
 import React from "react";
-
 import Hero from "../../components/Hero";
 import Dropdown from "../../components/DropDown";
-
-import "../../utils/css/style.css";
-
 import Image from "../../assets/headerBaniereApropos.jpg";
+import "../../utils/css/style.css";
 
 function APropos() {
   return (

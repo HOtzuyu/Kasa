@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../../utils/css/style.css";
 
 function Profil({ proprietaire, photoProprietaire }) {

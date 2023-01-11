@@ -1,12 +1,11 @@
 import React from "react";
 import { useState } from "react";
-
-import "../../utils/css/style.css";
-
 import IconClose from "../../assets/fermer.svg";
 import IconOpen from "../../assets/ouvert.svg";
+import "../../utils/css/style.css";
 
 function Dropdown({ title, text, extraClass }) {
+  //init stat to false || true si deploy
   const [dropdownStart, setDropdown] = useState(false);
   const handleOpen = () => {
     setDropdown(!dropdownStart);
@@ -22,8 +21,8 @@ function Dropdown({ title, text, extraClass }) {
         )}
       </div>
       {dropdownStart ? (
-        // <p className="dropdown__section--text">{ text }</p>
         <div>
+          {/* Check si l'élément reçu est un texte ou une liste */}
           {typeof text === "object" ? (
             tabEquipement(text)
           ) : (
@@ -35,6 +34,7 @@ function Dropdown({ title, text, extraClass }) {
   );
 }
 
+// mise en place de liste dans le deploy
 function tabEquipement(tab) {
   return (
     <ul className='dropdown__section--list'>

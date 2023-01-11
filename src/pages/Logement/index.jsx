@@ -1,12 +1,9 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
-
 import { getId } from "../../Data/logements";
-
 import Carroussel from "../../components/Carroussel";
 import IntoLogement from "../../components/IntroLogement";
 import Dropdown from "../../components/DropDown";
-
 import "../../utils/css/style.css";
 
 function PageLogements() {

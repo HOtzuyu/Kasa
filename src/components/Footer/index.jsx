@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import logoB from "../../assets/LOGO-B.svg";
-
 import "../../utils/css/style.css";
 
 function Footer() {

@@ -1,9 +1,7 @@
 import React from "react";
-
 import Profil from "../Profil";
 import NoteEtoiles from "../NoteEtoiles";
 import Tags from "../Tags";
-
 import "../../utils/css/style.css";
 
 function IntoLogement({
