@@ -101,6 +101,7 @@
   border-radius: 5px;
   padding: 5.61px 18.08px 7.39px 18.08px;
   margin-top: 31px;
+  cursor: pointer;
 }
 .dropdown__section--title {
   font-family: "Montserrat", sans-serif;
