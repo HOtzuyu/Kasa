@@ -23,6 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 
-# sass folders
-/src/sass
+# folders
 /src/utils/css/style.css.map

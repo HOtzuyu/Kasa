@@ -1,0 +1,32 @@
+.thumb {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+
+    @include mobile {
+        width: 335px;
+        height: 255px;
+
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(80%) contrast(150%);
+        border-radius: 10px
+    }
+
+    &__title {
+        @include fonts(text-w);
+        text-shadow: 1px 1px 2px black;
+        position: absolute;
+        align-self: flex-end;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    }
+}

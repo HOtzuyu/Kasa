@@ -1,0 +1,39 @@
+.hero {
+    width: 100%;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @include desktop {
+        padding: 0 20px;
+    }
+
+    @include mobile {
+        height: 111px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(80%);
+
+    }
+
+    &__title {
+        @include fonts(principal-title);
+        position: absolute;
+
+        @include mobile {
+            font-size: 24px;
+            line-height: 24px;
+            width: 80%;
+            margin: auto 16px;
+        }
+    }
+
+
+}

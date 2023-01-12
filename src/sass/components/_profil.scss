@@ -1,0 +1,27 @@
+.profil {
+    display: flex;
+    align-items: center;
+
+
+    &__name {
+        @include fonts(text-r);
+        margin-right: 10px;
+
+        @include mobile {
+            font-size: 12px;
+            line-height: 17.11px;
+        }
+    }
+
+    &__picture {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+
+        @include mobile {
+            height: 32px;
+            width: 32px;
+
+        }
+    }
+}

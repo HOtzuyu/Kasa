@@ -1,0 +1,19 @@
+* {
+    font-family: $font;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+    @include desktop {
+        width: auto;
+        margin: 0;
+    }
+}

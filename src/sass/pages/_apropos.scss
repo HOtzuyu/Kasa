@@ -1,0 +1,13 @@
+.apropos__image {
+    border-radius: 25px;
+    filter: brightness(.8);
+}
+
+.about {
+    width: 1023px;
+    margin: 31px auto;
+
+    @include desktop {
+        width: 90%;
+    }
+}

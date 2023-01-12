@@ -1,0 +1,40 @@
+.dropdown {
+    &__section {
+        background-color: #FF6060;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding: 5.61px 18.08px 7.39px 18.08px;
+        margin-top: 31px;
+        cursor: pointer;
+
+        &--title {
+            @include fonts(text-w);
+        }
+
+        &--text {
+            @include fonts(text-r);
+            padding: 27px 27px 19px 27px;
+            background-color: #F6F6F6;
+            border-radius: 0 0 5px 5px;
+
+        }
+
+        &--list {
+            @include fonts(text-r);
+            padding: 27px 27px 19px 27px;
+            background-color: #F6F6F6;
+            border-radius: 0 0 5px 5px;
+            list-style: none;
+        }
+    }
+
+    &.reduit {
+        width: 582px;
+
+        @include desktop {
+            width: 100%;
+        }
+
+    }
+}

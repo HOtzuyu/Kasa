@@ -1,0 +1,20 @@
+.erreurPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 103px auto 159px auto;
+
+    &__titre {
+        @include fonts(text-erreur);
+    }
+
+    &__texte {
+        @include fonts(principal-title_2);
+    }
+
+    &__retour {
+        @include fonts(text-r);
+        margin-top: 182px;
+    }
+}

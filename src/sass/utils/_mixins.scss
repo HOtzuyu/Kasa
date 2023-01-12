@@ -1,0 +1,21 @@
+// font change depend the situation
+@mixin fonts($state) {
+    $divers: map-get($fonts, $state);
+    font-family: map-get($divers, family);
+    font-weight: map-get($divers, weight);
+    font-size: map-get($divers, size);
+    color: map-get($divers, colour);
+    line-height: map-get($divers, line-height);
+}
+
+@mixin mobile {
+    @media screen and (max-width : map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width : map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

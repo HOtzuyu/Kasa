@@ -1,0 +1,45 @@
+.intro {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @include desktop {
+        padding: 0 20px;
+
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    &__gauche {
+        &--titre {
+            @include fonts(principal-title_2);
+
+            @include mobile {
+                font-size: 18px;
+                line-height: 25.67px;
+            }
+        }
+
+        &--localisation {
+            @include fonts(text-r);
+
+            @include mobile {
+                font-size: 14px;
+                line-height: 19.96px;
+            }
+        }
+    }
+
+    &__droite {
+        @include mobile {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./utils/maps";
+@import "./utils/mixins";
+
+@import "./bases/font";
+@import "./bases/reset";
+
+@import "./components/hero";
+@import "./components/thumb";
+@import "./components/dropDown";
+@import "./components/carroussel";
+@import "./components/introLogement";
+@import "./components/profil";
+@import "./components/etoile";
+@import "./components/tags";
+
+
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./pages/home";
+@import "./pages/apropos";
+@import "./pages/logement";
+@import "./pages/page404";

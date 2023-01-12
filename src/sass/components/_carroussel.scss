@@ -1,0 +1,55 @@
+.slider {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @include desktop {
+        padding: 0 20px;
+    }
+
+    @include mobile {
+        height: 255px;
+    }
+
+    &__photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    &__navigation {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24.92px 23.36px;
+
+        &--suivant,
+        &--precedent {
+            height: 79.2px;
+
+            @include mobile {
+                height: 19.8px;
+                width: 11.67px;
+            }
+        }
+
+        &--chiffre {
+            @include fonts(text-w);
+            align-self: flex-end;
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,25 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 60px;
+    row-gap: 50px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    padding: 56px 50px;
+    margin-top: 43px;
+
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: none;
+    }
+
+    @include mobile {
+        margin-top: 22px;
+        padding: 0;
+        row-gap: 20px;
+    }
+}

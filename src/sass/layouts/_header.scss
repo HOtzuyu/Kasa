@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+
+    @include desktop {
+        padding: 0 20px;
+    }
+
+    @include mobile {
+        margin-bottom: 19.71px;
+    }
+
+    &__logo {
+        @include mobile {
+            width: 145px;
+
+            &--img {
+                width: 145px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__liens {
+        display: flex;
+        align-items: flex-end;
+
+        @include mobile {
+            align-items: center
+        }
+
+        &--url {
+            @include fonts(text-link);
+            text-decoration: none;
+            margin-left: 57px;
+
+            @include mobile {
+                font-size: 12px;
+                margin-left: 10px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}
