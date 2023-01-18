@@ -1,4 +1,3 @@
-import React from "react";
 import etoileR from "../../assets/etoileR.svg";
 import etoileG from "../../assets/etoileG.svg";
 import "../../utils/css/style.css";
