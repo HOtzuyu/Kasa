@@ -6,6 +6,8 @@
     &__name {
         @include fonts(text-r);
         margin-right: 10px;
+        max-width: 5rem;
+        text-align: right;
 
         @include mobile {
             font-size: 12px;
